@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Elettricista a Palermo | Impianti e Pronto Intervento</title>
+
+    <meta
+      name="description"
+      content="Elettricista a Palermo per impianti elettrici, manutenzione e pronto intervento. Interventi rapidi in tutta Palermo e provincia."
+    />
+    <meta
+      name="keywords"
+      content="elettricista Palermo, pronto intervento elettricista Palermo, manutenzione elettrica Palermo, impianti elettrici Palermo"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="hero">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Elettricista a Palermo ⚡</h1>
+          <p>Impianti elettrici • Manutenzione • Pronto intervento rapido</p>
+          <a href="mailto:electric_soluction_p@libero.it" class="btn"
+            >Richiedi intervento</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section class="servizi">
+      <h2>Servizi Elettrici a Palermo</h2>
+
+      <div class="cards">
+        <div class="card">
+          <img
+            src="images/quadro1.jpg"
+            alt="Elettricista a Palermo su quadro elettrico"
+          />
+          <h3>Impianti Elettrici Civili</h3>
+          <p>
+            Realizzazione e rifacimento impianti elettrici a norma di legge.
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/montaggio.jpg"
+            alt="Installazione apparecchiature Palermo"
+          />
+          <h3>Manutenzione e Riparazioni</h3>
+          <p>Risoluzione guasti elettrici rapida in tutta Palermo.</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/cablaggio.jpg"
+            alt="Manutenzione impianti elettrici Palermo"
+          />
+          <h3>Pronto Intervento</h3>
+          <p>Interventi urgenti per blackout e cortocircuiti.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="zona">
+      <h2>Zona di Intervento</h2>
+      <p>Opero in tutta Palermo e provincia.</p>
+    </section>
+ -->
+    <section class="perche">
+      <h2>Perché Scegliere il Mio Servizio?</h2>
+      <ul>
+        <li>
+          <img src="images/service4.jpg" alt="Intervento rapido" />
+          <span>Intervento rapido</span>
+        </li>
+        <li>
+          <img src="images/service6.jpg" alt="Preventivi chiari" />
+          <span>Preventivi chiari e senza sorprese</span>
+        </li>
+        <li>
+          <img src="images/service5.jpg" alt="Lavori a norma" />
+          <span>Lavori a norma</span>
+        </li>
+        <li>
+          <img src="images/service1.jpg" alt="Esperienza e professionalità" />
+          <span>Esperienza e professionalità</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- JS per fade-in on scroll -->
+    <script>
+      const percheItems = document.querySelectorAll('.perche li');
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.2 });
+
+      percheItems.forEach(item => observer.observe(item));
+    </script>
+
+    <section class="cta">
+      <h2>Hai bisogno di un elettricista a Palermo?</h2>
+      <p>Opero su Palermo e provincia</p>
+      <p>Scrivimi ora e ti ricontatterò entro poche ore.</p>
+      <a href="mailto:electric_soluction_p@libero.it" class="btn"
+        >Contattami via Email</a
+      >
+    </section>
+
+    <footer>
+      <p>© 2026 Elettricista Palermo - Tutti i diritti riservati</p>
+    </footer>
+  </body>
+</html>
