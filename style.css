@@ -358,3 +358,17 @@ footer {
     font-size: 18px;
   }
 }
+.contatto-mail {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.contatto-mail a {
+  color: #f39c12;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contatto-mail a:hover {
+  text-decoration: underline;
+}
